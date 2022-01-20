@@ -13,7 +13,11 @@ class StringManipulations {
      * @param  {String} subStr  substring to be matched
      * @return {String}
      */
-    findFirstMatch(subStr) {}
+    findFirstMatch(subStr) {
+        var test = this.string.match(subStr);
+        console.log('Rapheta: ' + test);
+    }
+
 
 
     /**
@@ -55,3 +59,4 @@ class StringManipulations {
     fix_start(str1) {}
 
 }
+module.exports = StringManipulations;

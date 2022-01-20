@@ -7,7 +7,6 @@ class AdressMatcher {
      */
      constructor(adressText) {
         this.adressText = adressText;
-
         this.stringM = new StringManipulations(adressText);
      }
 
@@ -19,6 +18,15 @@ class AdressMatcher {
      findStreetName(streetName){
          return this.stringM.findFirstMatch(streetName);
      }
+
+     /**
+     * Searches for the street number in the given address
+     * @param  {string} streetNumber to be found in the address
+     * @return street number if found in address string
+     */
+      findStreetNumber(streetNumber){
+        return this.stringM.findLastMatch(streetNumber);
+    }
 
      /**
      * Hides the street name for security
