@@ -5,7 +5,7 @@
   "main": "circle.js",
   "scripts": {
     "test": "jest --verbose --coverage",
-    "lint": "eslint ./Aula2  --ext .js"
+    "lint": "eslint --ext .js"
   },
   "repository": {
     "type": "git",
