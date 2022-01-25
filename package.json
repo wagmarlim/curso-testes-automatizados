@@ -4,7 +4,8 @@
   "description": "Aula 1 - Fundamentos de automação de testes e scripts",
   "main": "circle.js",
   "scripts": {
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage",
+    "lint": "eslint ./Aula2  --ext .js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,26 @@
   },
   "homepage": "https://github.com/flaviajanine/curso-testes-automatizados#readme",
   "devDependencies": {
-    "jest": "^27.4.7"
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "jest": "^27.4.7",
+    "lint": "eslint .  --ext .js",
+    "lint-fix": "eslint --fix .  --ext .js"
   },
   "dependencies": {},
   "jest": {
-    "modulePathIgnorePatterns": ["<rootDir>/Aula 1", "<rootDir>/Aula 3", "<rootDir>/Aula 4"],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/Aula 1",
+      "<rootDir>/Aula 3",
+      "<rootDir>/Aula 4"
+    ],
     "collectCoverage": true,
-    "coverageReport": ["html"]
+    "coverageReport": [
+      "html"
+    ]
   }
 }
